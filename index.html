@@ -6,235 +6,233 @@
     <title>Ventex - Agricultural Excellence</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="flex-container">
-        <header class="sticky-header">
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="/" class="logo">
+                    <img src="/placeholder.svg" alt="Ventex Logo" width="40" height="40">
+                    <span>Ventex</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="cta-button">Contact Us</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
             <div class="container">
-                <div class="header-content">
-                    <a href="/" class="logo">
-                        <img src="/placeholder.svg" alt="Ventex Logo" width="40" height="40">
-                        <span>Ventex</span>
-                    </a>
-                    <nav class="desktop-nav">
-                        <a href="/">Home</a>
-                        <a href="#about">About Us</a>
-                        <a href="#services">Services</a>
-                        <a href="#products">Products</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                    </nav>
-                    <button class="menu-toggle" onclick="toggleMenu()">
-                        <i data-lucide="menu"></i>
-                    </button>
-                </div>
-            </div>
-        </header>
-
-        <nav class="mobile-nav" id="mobileNav">
-            <a href="/">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#products">Products</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <main>
-            <section class="hero">
-                <img src="/placeholder.svg?height=600&width=1600" alt="Agricultural landscape" class="hero-image">
                 <div class="hero-content">
-                    <h1>Welcome to Ventex</h1>
-                    <p>Your Partner in Agricultural Excellence</p>
-                    <a href="#contact" class="cta-button">Get in Touch</a>
-                </div>
-            </section>
-
-            <section id="about" class="about">
-                <div class="container">
-                    <h2>About Ventex</h2>
-                    <div class="about-content">
-                        <div class="about-text">
-                            <p>Ventex is a leading agricultural services company dedicated to promoting sustainable farming practices and enhancing agricultural productivity. With years of experience and a team of expert professionals, we provide innovative solutions to meet the evolving needs of modern agriculture.</p>
-                            <p>Our mission is to empower farmers and agricultural businesses with cutting-edge technologies, expert consultancy, and high-quality products that drive growth and sustainability in the sector.</p>
-                            <a href="#services" class="learn-more">
-                                Learn more about our services
-                                <i data-lucide="chevron-right"></i>
-                            </a>
-                        </div>
-                        <div class="about-image">
-                            <img src="/placeholder.svg?height=400&width=600" alt="Ventex team">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="services" class="services">
-                <div class="container">
-                    <h2>Our Services</h2>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <div class="service-icon">🌱</div>
-                            <h3>Agricultural Consulting</h3>
-                            <p>Expert advice on crop management, soil health, and sustainable farming practices.</p>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon">🚜</div>
-                            <h3>Farm Equipment</h3>
-                            <p>High-quality machinery and tools for efficient farming operations.</p>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon">🌿</div>
-                            <h3>Crop Protection</h3>
-                            <p>Integrated pest management solutions and plant health products.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="products" class="products">
-                <div class="container">
-                    <h2>Our Products</h2>
-                    <div class="products-grid">
-                        <div class="product-card">
-                            <img src="/placeholder.svg?height=200&width=200" alt="Organic Seeds">
-                            <h3>Organic Seeds</h3>
-                        </div>
-                        <div class="product-card">
-                            <img src="/placeholder.svg?height=200&width=200" alt="Fertilizers">
-                            <h3>Fertilizers</h3>
-                        </div>
-                        <div class="product-card">
-                            <img src="/placeholder.svg?height=200&width=200" alt="Irrigation Systems">
-                            <h3>Irrigation Systems</h3>
-                        </div>
-                        <div class="product-card">
-                            <img src="/placeholder.svg?height=200&width=200" alt="Harvesting Tools">
-                            <h3>Harvesting Tools</h3>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" class="cta-button">View Full Catalog</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="projects">
-                <div class="container">
-                    <h2>Our Projects</h2>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <img src="/placeholder.svg?height=300&width=400" alt="Sustainable Farming Initiative">
-                            <div class="project-info">
-                                <h3>Sustainable Farming Initiative</h3>
-                                <p>Implementing eco-friendly practices in large-scale wheat production.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="/placeholder.svg?height=300&width=400" alt="Smart Irrigation Project">
-                            <div class="project-info">
-                                <h3>Smart Irrigation Project</h3>
-                                <p>Deploying IoT-based irrigation systems for water conservation.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="/placeholder.svg?height=300&width=400" alt="Organic Vineyard Conversion">
-                            <div class="project-info">
-                                <h3>Organic Vineyard Conversion</h3>
-                                <p>Assisting a major vineyard in transitioning to organic grape production.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="contact">
-                <div class="container">
-                    <h2>Contact Us</h2>
-                    <div class="contact-content">
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-button">Send Message</button>
-                        </form>
-                        <div class="contact-info">
-                            <div class="info-item">
-                                <i data-lucide="phone"></i>
-                                <span>+1 (555) 123-4567</span>
-                            </div>
-                            <div class="info-item">
-                                <i data-lucide="mail"></i>
-                                <span>info@ventex.com</span>
-                            </div>
-                            <div class="info-item">
-                                <i data-lucide="map-pin"></i>
-                                <span>123 Farm Road, Agriville, AG 12345</span>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i data-lucide="facebook"></i></a>
-                                <a href="#"><i data-lucide="twitter"></i></a>
-                                <a href="#"><i data-lucide="linkedin"></i></a>
-                                <a href="#"><i data-lucide="instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <h3>About Ventex</h3>
-                        <p>Ventex is a leading agricultural services company dedicated to promoting sustainable farming practices and enhancing agricultural productivity.</p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#products">Products</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Newsletter</h3>
-                        <p>Stay updated with our latest news and offers.</p>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Your email" required>
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; <span id="currentYear"></span> Ventex. All rights reserved.</p>
+                    <h1>Revolutionizing Agriculture</h1>
+                    <p>Empowering farmers with innovative solutions for sustainable growth</p>
+                    <a href="#contact" class="cta-button">Get Started</a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Ventex</h2>
+                    <p>Leading the way in agricultural innovation</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At Ventex, we're committed to transforming agriculture through cutting-edge technology and sustainable practices. Our team of experts works tirelessly to provide farmers with the tools and knowledge they need to thrive in today's challenging agricultural landscape.</p>
+                        <a href="#services" class="learn-more">Explore our services <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="about-image">
+                        <img src="/placeholder.svg" alt="Ventex team in action">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive solutions for modern farming</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i data-lucide="sprout" class="service-icon"></i>
+                        <h3>Crop Optimization</h3>
+                        <p>Maximize your yield with our advanced crop management techniques.</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="database" class="service-icon"></i>
+                        <h3>Data-Driven Insights</h3>
+                        <p>Make informed decisions with our powerful analytics tools.</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="droplets" class="service-icon"></i>
+                        <h3>Smart Irrigation</h3>
+                        <p>Conserve water and improve crop health with precision irrigation systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Products</h2>
+                    <p>Cutting-edge tools for modern agriculture</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="/placeholder.svg" alt="Smart Sensor">
+                        <h3>Smart Soil Sensor</h3>
+                        <p>Real-time soil health monitoring</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/placeholder.svg" alt="Drone">
+                        <h3>Agricultural Drone</h3>
+                        <p>Aerial crop monitoring and spraying</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/placeholder.svg" alt="IoT Gateway">
+                        <h3>IoT Farm Gateway</h3>
+                        <p>Centralized farm data management</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/placeholder.svg" alt="Weather Station">
+                        <h3>Weather Station</h3>
+                        <p>Hyperlocal weather forecasting</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="secondary-button">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Success Stories</h2>
+                    <p>Real-world impact of our solutions</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="/placeholder.svg" alt="Wheat field">
+                        <div class="project-info">
+                            <h3>30% Yield Increase</h3>
+                            <p>Helped a wheat farm boost productivity through precision agriculture.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="/placeholder.svg" alt="Water conservation">
+                        <div class="project-info">
+                            <h3>40% Water Savings</h3>
+                            <p>Implemented smart irrigation system for a large vineyard.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="/placeholder.svg" alt="Data analytics">
+                        <div class="project-info">
+                            <h3>Data-Driven Decisions</h3>
+                            <p>Empowered a cooperative with actionable insights from farm data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p>Let's discuss how we can help your farm thrive</p>
+                </div>
+                <div class="contact-content">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i data-lucide="phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <span>info@ventex.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>123 Farm Road, Agriville, AG 12345</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Ventex</h3>
+                    <p>Ventex is a leading agricultural technology company dedicated to empowering farmers with innovative solutions for sustainable and profitable farming.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest agricultural insights and Ventex news.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="cta-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Ventex. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         function toggleMenu() {
-            const mobileNav = document.getElementById('mobileNav');
-            mobileNav.classList.toggle('active');
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
             const menuIcon = document.querySelector('.menu-toggle i');
-            menuIcon.setAttribute('data-lucide', mobileNav.classList.contains('active') ? 'x' : 'menu');
+            menuIcon.setAttribute('data-lucide', navLinks.classList.contains('active') ? 'x' : 'menu');
             lucide.createIcons();
         }
 
+        document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         lucide.createIcons();
     </script>
